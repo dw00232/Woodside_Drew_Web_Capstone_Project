@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Community | Game Review Hub</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-box">
+                <img src="controller.png" alt="Game Controller" width="100">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="gamereviews.html">Game Reviews</a></li>
+                    <li><a href="newsandupdates.html">News and Updates</a></li>
+                    <li><a href="aboutandcommunity.html" class="active">About and Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>About Our Community</h1>
+            <p class="mission-statement">We are dedicated to transparency and supporting the indie gaming world.</p>
+        </section>
+
+        <section class="info-grid">
+            <div class="policy">
+                <h3>Review Policy:</h3>
+                <p>Our reviews are 100% unbiased. We ensure you the truth here.</p>
+            </div>
+            
+            <div class="submission">
+                <h3>Game Submission:</h3>
+                <p>Are you an indie developer? Send us your game for a chance to be featured in our next Spotlight!</p>
+
+<form action="https://webdevbasics.net/scripts/demo.php" method="post">
+        <label for="dev-name">Developer Name:</label>
+        <input type="text" id="dev-name" name="dev-name" required>
+
+        <label for="dev-email">Email:</label>
+        <input type="email" id="dev-email" name="dev-email" required>
+
+        <label for="game-title">Game Title:</label>
+        <input type="text" id="game-title" name="game-title" required>
+
+        <label for="message">Description:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Submission</button>
+    </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: info@gamereviewhub.com | Community guidelines</p>
+    </footer>
+</body>
+</html>

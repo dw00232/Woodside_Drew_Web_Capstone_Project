@@ -1,0 +1,187 @@
+/* Setting the font and colors and making sure there's no extra spacing */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* Header layout: Push the logo to the left and nav to the right */
+header {
+    border-bottom: 2px solid #2C3E50;
+    padding: 10px 5%;
+}
+
+.header-container {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    position: relative; 
+}
+
+/* Making the logo with the controller image */
+.logo-box {
+	padding: 10px 20px;
+}
+
+/* Getting rid of bullet points and putting nav links in a row */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    gap: 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5em; 
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+
+/* Changes color and adds an underline when mouse is over link */
+nav a:hover {
+    color: #27AE60; /* Matches your green accent color */
+    border-bottom: 3px solid #27AE60;
+}
+
+/* Highlight the link of the page the user is currently on */
+nav a.active {
+    color: #27AE60;
+    border-bottom: 3px;
+}
+
+
+/* Styling the Hero section, the Welcome Gamer, to be big, gray, and centered */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #F4F4F4;
+}
+
+/* To make Hero section text bigger */
+.hero h1 {
+    font-size: 4em;
+}
+
+/* Limiting how wide the text gets so it's easy to read */
+.mission-statement {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+/*  Puts Goals and Audience in two columns */
+.info-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10%;
+    gap: 40px;
+    font-size: 1.25em;
+   
+}
+
+/* Adding the green accent color to headers */
+.goals h3, .audience h3, .indie-spotlight h3, .categories h3, .calendar h3, 
+.interviews h3, .info-grid h3, .submission h3, .policy h3 {
+    color: #1E8449;
+    border-bottom: 2px solid #27AE60;
+}
+
+/* Dark footer at the bottom */
+footer {
+    padding: 30px 5%;
+    background: #333;
+    color: white;
+}
+
+/* Style the main form box to be centered and light gray */
+form {
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #F4F4F4;
+	border: 1px solid #000;
+}
+
+/* Make the labels bold and put them on their own line */
+label {
+	display: block;
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+/* Make the inputs fill the space with a green border */
+input, textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #27AE60;
+}
+
+/* Style the submit button to be big, green, and easy to click for users */
+button {
+	margin-top: 20px;
+	padding: 12px 25px;
+	background-color: #27AE60;
+	color: white;
+	border: none;
+	font-size: 1.2em;
+}
+
+/* Make the button turn dark green when the mouse is over it */
+button:hover {
+	background-color: #1E8449;
+}
+
+@media (max-width: 768px) {
+    
+    /* Stack the two columns on top of each other for small screens */
+    .info-grid {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* Make the text smaller so it fits on a phone screen */
+    .hero h1 {
+        font-size: 2.5em;
+    }
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 2px solid #27AE60; /* Using your green accent color */
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+th {
+    background-color: #27AE60;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
