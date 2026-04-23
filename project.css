@@ -223,3 +223,45 @@ td {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 5%;
+}
+
+.product-card {
+    border: 2px solid #27AE60;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.product-card p strong {
+    font-size: 1.5em;
+    display: block;
+    margin: 10px 0;
+}
+
+.snipcart-checkout {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5em; /* Matches your other nav link sizes */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.snipcart-checkout:hover {
+    color: #27AE60;
+    border-bottom: 3px solid #27AE60;
+}

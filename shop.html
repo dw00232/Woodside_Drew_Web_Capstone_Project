@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Game Review Hub</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-box">
+                <img src="controller.png" alt="Logo" width="100">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="gamereviews.html">Game Reviews</a></li>
+                    <li><a href="newsandupdates.html">News and Updates</a></li>
+                    <li><a href="aboutandcommunity.html">About</a></li>
+		    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="#" class="snipcart-checkout">View Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Support the Hub</h1>
+            <p>Get some cool gear and help us keep the reviews coming.</p>
+        </section>
+
+        <section class="product-grid">
+            <div class="product-card" style="border: 1px solid #27AE60; padding: 20px; text-align: center; margin-bottom: 20px;">
+                <h3>Gamer Hoodie</h3>
+                <p>Super soft and perfect for long sessions.</p>
+                <p><strong>$45.00</strong></p>
+                <button class="snipcart-add-item" 
+                    data-item-id="hoodie" 
+                    data-item-name="Gamer Hoodie" 
+                    data-item-price="45.00" 
+                    data-item-url="shop.html"> 
+                    Add to Cart 
+                </button>
+            </div>
+
+            <div class="product-card" style="border: 1px solid #27AE60; padding: 20px; text-align: center;">
+                <h3>Hub Sticker</h3>
+                <p>Looks great on a laptop or console.</p>
+                <p><strong>$5.00</strong></p>
+                <button class="snipcart-add-item" 
+                    data-item-id="sticker" 
+                    data-item-name="Hub Sticker" 
+                    data-item-price="5.00" 
+                    data-item-url="shop.html"> 
+                    Add to Cart 
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Social media | Community guidelines | Contact Info</p>
+    </footer>
+
+    <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="Y2VjY2Y5NzctY2Y3MC00YjVjLWFmOTQtOGRiYjhiMjkzMTI2NjM4NDk0NjY5NjM0MTU0MTM5"></div>
+</body>
+</html>
