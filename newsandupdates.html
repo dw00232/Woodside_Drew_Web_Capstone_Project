@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News & Updates | Game Review Hub</title>
-    <!-- Connecting the CSS file so the styling shows up -->
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
@@ -43,8 +42,9 @@
         </section>
 
         <section class="info-grid">
-            <div class="calendar">
+            <div class="calendar" id="calendar-box">
                 <h3>Release Calendar:</h3>
+		<button type="button" onclick="highlightNews()">Highlight Dates</button>
                 <p><strong>March 2026:</strong> Indie World Showcase</p>
                 <p><strong>April 2026:</strong> Spring Sale Event</p>
             </div>
@@ -59,6 +59,28 @@
     <footer>
         <p>Social media | Community guidelines | Contact Info</p>
     </footer>
+
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+<script>
+    function highlightNews() {
+        var box = document.querySelector(".calendar");
+        
+        if (box.style.backgroundColor == "yellow") {
+            box.style.backgroundColor = ""; // Resets to original
+        } else {
+            box.style.backgroundColor = "yellow";
+        }
+    }
+
+    $(document).ready(function() {
+        $(".calendar h3").css("cursor", "pointer");
+        
+        $(".calendar h3").on("click", function() {
+            $(".calendar p").slideToggle("slow");
+        });
+    });
+</script>
 
 </body>
 </html>

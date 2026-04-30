@@ -30,13 +30,12 @@
             <p class="mission-statement">Explore our latest deep-dives into the indie scene and beyond.</p>
         </section>
 
-        <!-- CSS Image Gallery (Practice 11.7) -->
         <section style="padding: 20px 10%;">
             <h3>Game Screenshots:</h3>
             <div class="gallery">
-                <img src="game1.jpg" alt="Elden Ring">
-                <img src="game2.jpg" alt="Sea of Thieves">
-                <img src="game3.jpg" alt="Hollow Knight">
+        	 <img src="game1.jpg" id="current-game" alt="Elden Ring" width="300">
+    		 <br>
+    		 <button type="button" onclick="nextGame()">Next Screenshot</button>
             </div>
         </section>
 
@@ -85,5 +84,20 @@
     <footer>
         <p>Social media | Community guidelines | Contact Info</p>
     </footer>
+  
+<script>
+    function nextGame() {
+        var screen = document.getElementById("current-game");
+        
+        if (screen.src.match("game1.jpg")) {
+            screen.src = "game2.jpg";
+        } else if (screen.src.match("game2.jpg")) {
+            screen.src = "game3.jpg";
+        } else {
+            screen.src = "game1.jpg";
+        }
+    }
+</script>
+
 </body>
 </html>
