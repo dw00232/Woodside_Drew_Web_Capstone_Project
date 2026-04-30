@@ -9,7 +9,10 @@ No installation is required. You can view the project code here on GitHub or vis
 
 Usage:
 
-Homepage: View our mission statement and site goals.
-Game Reviews: Look at scores and click screenshots to see different views.
-News: See the release calendar and use the slide or highlight features.
-Community: Use the form for indie developer game submissions.
+1. Homepage: View our mission statement and site goals.
+
+2. Game Reviews: Look at scores and click screenshots to see different views.
+
+3. News: See the release calendar and use the slide or highlight features.
+
+4. Community: Use the form for indie developer game submissions.
