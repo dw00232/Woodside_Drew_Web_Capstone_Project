@@ -1,7 +1,7 @@
 /* Setting the font and colors and making sure there's no extra spacing */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #333;
     margin: 0;
 }
@@ -9,7 +9,6 @@ body {
 /* Header layout: Push the logo to the left and nav to the right */
 header {
     border-bottom: 2px solid #2C3E50;
-    padding: 10px 5%;
 }
 
 .header-container {
@@ -47,14 +46,14 @@ nav a {
 
 /* Changes color and adds an underline when mouse is over link */
 nav a:hover {
-    color: #27AE60; /* Matches your green accent color */
+    color: #27AE60;
     border-bottom: 3px solid #27AE60;
 }
 
 /* Highlight the link of the page the user is currently on */
 nav a.active {
     color: #27AE60;
-    border-bottom: 3px;
+    border-bottom: 3px solid #27AE60;
 }
 
 
@@ -161,6 +160,7 @@ input, textarea {
 	padding: 10px;
 	margin-top: 5px;
 	border: 1px solid #27AE60;
+	box-sizing: border-box;
 }
 
 /* Style the submit button to be big, green, and easy to click for users */
