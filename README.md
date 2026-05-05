@@ -16,3 +16,9 @@ Usage:
 3. News: See the release calendar and use the slide or highlight features.
 
 4. Community: Use the form for indie developer game submissions.
+
+5. Shop: Check out our gear, like hoodies and stickers, to support us.
+
+6. FAQ: Get answers to common questions about our reviews and community rules.
+
+7. Contact: Reach out to us for general help or questions.
